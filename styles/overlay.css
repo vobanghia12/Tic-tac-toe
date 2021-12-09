@@ -1,0 +1,30 @@
+#config-overlay{
+    text-align: center;
+}
+.modal{
+   position: fixed;
+   top: 20%;
+   left: 5%;
+   width: 90%;
+   background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+    padding: 1rem;
+    display: none;
+}
+#backdrop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
+
+@media (min-width: 48rem){
+    .modal{
+        left: calc(50% - 20rem);
+        width: 40rem;
+    }
+}
